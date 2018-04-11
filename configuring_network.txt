@@ -1,4 +1,11 @@
-ifconfig -a
-ifconfig wlo1 192.168.1.151 netmask 255.255.252.0
-sudo route add default gw 192.168.0.8
+//To identify all ethernet interfaces
+      ifconfig -a
+
+//To temporarily configure an IP address
+      ifconfig wlo1 192.168.43.179 netmask 255.255.252.0
+
+//To configure a default gateway
+      sudo route add default gw 192.168.43.179 wlo1
+
+//To change DNS settings
 sudo nano /etc/resolv.conf 
