@@ -7,5 +7,6 @@
 //To configure a default gateway
       sudo route add default gw 192.168.43.179 wlo1
 
+
 //To change DNS settings
 sudo nano /etc/resolv.conf 
